@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Underlying index page content -->
+  <div id="content">
+    <h1>Welcome to my website</h1>
+    <p>This is the underlying index page content.</p>
+  </div>
+
+  <!-- Terminal window overlay -->
+  <div id="terminal-overlay">
+    <div id="terminal-window">
+      <div class="terminal-header">
+        <button id="minimize-btn">_</button>
+      </div>
+      <div class="terminal-body">
+        <div id="chat-output"></div>
+      </div>
+      <div class="terminal-footer">
+        <input type="text" id="user-input" placeholder="Type your prompt here...">
+        <button id="send-btn">Send</button>
+      </div>
+      <!-- Preset buttons for yes/no responses -->
+      <div id="preset-buttons" class="hidden">
+        <button class="preset-btn" data-answer="yes">Yes</button>
+        <button class="preset-btn" data-answer="no">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
