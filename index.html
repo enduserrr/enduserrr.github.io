@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chat Terminal</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>usebittensor - Explore Bittensor Apps</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Underlying index page content -->
-  <div id="content">
-    <h1>Welcome to my website</h1>
-    <p>This is the underlying index page content.</p>
-  </div>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Subnet of the Week</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Terminal window overlay -->
-  <div id="terminal-overlay">
-    <div id="terminal-window">
-      <div class="terminal-header">
-        <button id="minimize-btn">_</button>
+  <!-- Subnet of the Week Banner -->
+  <section class="banner">
+    <h2>Subnet of the Week</h2>
+    <p>Highlighting an outstanding subnet project.</p>
+  </section>
+
+  <!-- Carousel of Top 3 Platforms -->
+  <section class="carousel">
+    <h2>Top Platforms</h2>
+    <div class="carousel-container">
+      <!-- Example carousel items (you can update these) -->
+      <div class="carousel-item">
+        <a href="https://app.macrocosmos.ai/apex/chat" target="_blank">
+          <h3>SN1 Apex</h3>
+        </a>
       </div>
-      <div class="terminal-body">
-        <div id="chat-output"></div>
+      <div class="carousel-item">
+        <a href="https://sybil.com" target="_blank">
+          <h3>SN4 Targon</h3>
+        </a>
       </div>
-      <div class="terminal-footer">
-        <input type="text" id="user-input" placeholder="Type your prompt here...">
-        <button id="send-btn">Send</button>
-      </div>
-      <!-- Preset buttons for yes/no responses -->
-      <div id="preset-buttons" class="hidden">
-        <button class="preset-btn" data-answer="yes">Yes</button>
-        <button class="preset-btn" data-answer="no">No</button>
+      <div class="carousel-item">
+        <a href="https://aion5100.ai" target="_blank">
+          <h3>SN6 Infinite Games</h3>
+        </a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Main Application List -->
+  <section class="application-list">
+    <h2>Explore All Bittensor Applications</h2>
+    <div class="app-grid" id="appGrid">
+      <!-- The script.js file will populate this grid dynamically -->
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

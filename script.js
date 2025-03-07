@@ -1,81 +1,54 @@
-// TerminalWindow module
-const TerminalWindow = (() => {
-    const chatOutput = document.getElementById('chat-output');
-    const userInput = document.getElementById('user-input');
-    const sendBtn = document.getElementById('send-btn');
-    const minimizeBtn = document.getElementById('minimize-btn');
-    const presetButtonsContainer = document.getElementById('preset-buttons');
+// Example list of Bittensor applications.
+// You can add/remove items or categorize them later.
+const subnets = [
+    { name: "SN1 Apex", link: "https://app.macrocosmos.ai/apex/chat" },
+    { name: "SN4 Targon", link: "https://sybil.com" },
+    { name: "SN6 Infinite Games", link: "https://aion5100.ai" },
+    { name: "SN10 Sturdy", link: "https://v2.sturdy.finance/overview" },
+    { name: "SN13 Dataverse", link: "https://app.macrocosmos.ai/gravity/tasks" },
+    { name: "SN17 Three Gen", link: "https://404.xyz/app" },
+    { name: "SN18 Cortex", link: "https://app.corcel.io" },
+    { name: "SN19 Inference", link: "https://nineteen.ai/app" },
+    { name: "SN19 Inference Alt", link: "https://glider.so" },
+    { name: "SN21 Omega Any-Any", link: "https://sn21.ai/chat" },
+    { name: "SN22 Desearch", link: "https://desearch.ai" },
+    { name: "SN23 SocialTensor", link: "https://makeitaquote.com" },
+    { name: "SN32 It's AI", link: "https://its-ai.org/#apps" },
+    { name: "SN34 Bitmind", link: "https://bitmind.ai/apps" },
+    { name: "SN40 Data Chunking", link: "https://beta.vectorchat.ai" },
+    { name: "SN47 Condenses AI", link: "https://condenses.ai/#playground" },
+    { name: "SN48 NextPlace AI", link: "https://nextplace.ai/productPortal" },
+    { name: "SN52 Tensorplex Dojo", link: "https://dojo.network" },
+    { name: "SN54 WebGenie", link: "https://webgenieai.co/playground" },
+    { name: "SN56 Gradients", link: "https://gradients.io/app/" },
+    { name: "SN58 Dippy Speech", link: "https://dippyspeech.com" },
+    { name: "SN64 Chutes", link: "https://chutes.ai" },
+    { name: "SN64 Chutes Alt", link: "https://glider.so" },
+    { name: "SN66 Fake News", link: "https://highsky.io/fakenews#app_heading" },
+  ];
   
-    // Function to append text letter by letter
-    const typeText = (text, callback) => {
-      let index = 0;
-      const interval = setInterval(() => {
-        if (index < text.length) {
-          chatOutput.innerHTML += text.charAt(index);
-          index++;
-          // Auto-scroll to bottom
-          chatOutput.scrollTop = chatOutput.scrollHeight;
-        } else {
-          clearInterval(interval);
-          chatOutput.innerHTML += "\n";
-          if (callback) callback();
-        }
-      }, 50); // Adjust speed as needed
-    };
+  /**
+   * Dynamically create cards in the .app-grid section.
+   */
+  function generateAppCards() {
+    const appGrid = document.getElementById("appGrid");
+    
+    subnets.forEach((app) => {
+      const card = document.createElement("div");
+      card.className = "app-card";
   
-    // Send button click handler
-    sendBtn.addEventListener('click', () => {
-      const text = userInput.value.trim();
-      if (text) {
-        chatOutput.innerHTML += "> " + text + "\n";
-        userInput.value = "";
-        // Here, integrate your Akash API call
-        simulateBotResponse(text);
-      }
+      const anchor = document.createElement("a");
+      anchor.href = app.link;
+      anchor.target = "_blank";
+      anchor.innerHTML = `<h3>${app.name}</h3>`;
+  
+      card.appendChild(anchor);
+      appGrid.appendChild(card);
     });
+  }
   
-    // Allow Enter key to trigger send
-    userInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        sendBtn.click();
-      }
-    });
-  
-    // Simulated bot response (replace with Akash API integration)
-    const simulateBotResponse = (userText) => {
-      if (userText.toLowerCase().includes("question")) {
-        // If the user message triggers a yes/no question
-        typeText("Do you want to continue? [Yes/No]", () => {
-          presetButtonsContainer.classList.remove('hidden');
-        });
-      } else {
-        // Standard response echoing user text
-        typeText("Echo: " + userText);
-      }
-    };
-  
-    // Minimize button toggles the terminal overlay
-    minimizeBtn.addEventListener('click', () => {
-      const overlay = document.getElementById('terminal-overlay');
-      overlay.style.display = (overlay.style.display === "none") ? "flex" : "none";
-    });
-  
-    // Handle preset yes/no button clicks
-    const presetButtons = document.querySelectorAll('.preset-btn');
-    presetButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const answer = btn.getAttribute('data-answer');
-        chatOutput.innerHTML += "> " + answer + "\n";
-        presetButtonsContainer.classList.add('hidden');
-        typeText("You selected: " + answer);
-      });
-    });
-  
-    // Expose public API if further extension is needed
-    return {
-      typeText,
-      clear: () => chatOutput.innerHTML = ""
-    };
-  
-  })();
+  // Initialize once the DOM is loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    generateAppCards();
+  });
   
