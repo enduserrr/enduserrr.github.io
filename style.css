@@ -1,110 +1,1161 @@
-/* General Reset / Box-Sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Inter", Helvetica, sans-serif;
+  background-color: #babab4;
+  color: #E8ECEF;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hero-text h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  max-width: 800px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5; /* Improves readability */
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  letter-spacing: 0.1em;
+}
+
+.hero-text h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  max-width: 800px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.4; /* Improves readability */
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.hero-text p {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #E8ECEF;
+  max-width: 900px; /* Slightly wider for more text */
+  margin: 0 auto; /* Centers the paragraph */
+}
+
+/*                  */
+/*  Header Section  */
+/*                  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #d8d8d8ac;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+  max-width: 1500px; /* Match the page content width */
+  margin: 0 auto; /* Center the header */
+  width: 100%; /* Ensure it takes full width up to max-width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: sticky;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #191919;
+}
+
+.header-left {
+  flex-shrink: 0;
+}
+
+.site-title {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.header-middle {
+  position: absolute; /* Position absolutely within the header */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for its own width to center perfectly */
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #1d1d1d;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.nav-menu li a:hover {
+  color: #1d1d1dcc;
+  text-decoration: underline;
+}
+
+.header-right {
+  flex-shrink: 0;
+}
+
+.connect-btn {
+  background: transparent;
+  border: 2px solid #1d1d1d;
+  color: #1d1d1d;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.connect-btn:hover {
+  background: #d8d8d8;
+  color: #d8d8d8;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .header-middle,
+  .header-right {
+    display: none;
   }
-  
-  /* Body Styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #0e131f;
-    color: #f5f5f5;
-    line-height: 1.6;
+
+  .hamburger {
+    display: block;
   }
-  
-  /* Navigation */
-  header {
-    background-color: #101620;
-    padding: 1rem 2rem;
-  }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-  }
-  nav a {
-    color: #cfd7e6;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  nav a:hover {
-    color: #00c2ff;
-  }
-  
-  /* Banner */
-  .banner {
-    background: linear-gradient(135deg, #1a2232, #131926);
+
+  .header-left {
+    flex: 1;
     text-align: center;
-    padding: 2rem 1rem;
   }
-  .banner h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  .banner p {
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-  
-  /* Carousel */
-  .carousel {
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  .carousel-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  .carousel-item {
-    background-color: #1c2535;
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #16181f;
+    flex-direction: column;
     padding: 1rem;
-    border-radius: 6px;
-    min-width: 150px;
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  .carousel-item:hover {
-    transform: scale(1.05);
+
+  .nav-menu.active {
+    display: flex;
   }
-  .carousel-item h3 {
-    margin-bottom: 0;
-    color: #00c2ff;
+
+  .nav-menu li {
+    margin: 0.5rem 0;
   }
-  
-  /* Application List */
-  .application-list {
-    padding: 2rem 1rem;
-  }
-  .application-list h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .app-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .app-card {
-    background-color: #1c2535;
-    padding: 1rem;
-    border-radius: 6px;
-    transition: transform 0.2s ease;
-    text-align: center;
-  }
-  .app-card:hover {
-    transform: translateY(-2px);
-  }
-  .app-card h3 {
-    margin-bottom: 0.5rem;
-    color: #00c2ff;
-  }
-  .app-card a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
+}
+
+/*                          */
+/*          Banner          */
+/*                          */
+/*.banner {
+  background: linear-gradient(135deg, #070926, #1f2129);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.banner h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.banner p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}*/
+
+/*                    */
+/* Search Bar Section */
+/*                    */
+/*.search-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.search-response {
+  min-height: 50px;
+  margin-bottom: 1rem;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #E8ECEF;
+  white-space: pre-wrap;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#search-input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #3d3d41;
+  border-radius: 4px;
+  background-color: #252F35;
+  color: #E8ECEF;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+#search-input::placeholder {
+  color: #A0A0A0;
+}
+#search-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #28292b;
+  color: #E8ECEF;
+  border: none;
+  border-radius: 4px;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+#search-btn:hover {
+  background-color: #45474b;
+}*/
+
+/*          */
+/* Carousel */
+/*          */
+/*.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: #121317;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  filter: blur(2px);
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3e3e4058;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E8ECEF;
+  text-shadow: 1px 1px 2px #000000cc;
+  width: 80%;
+  z-index: 2;
+}
+
+.carousel-item h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: #28292b;
+  color: #E8ECEF;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.explore-btn:hover {
+  background-color: #45474b;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1e2022;
+  color: #cfcfcf;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.carousel-btn:hover {
+  background-color: #56585d;
+}
+
+.prev-btn {
+  left: 10px;
+}
+.next-btn {
+  right: 10px;
+}*/
+
+/*                  */
+/* Application List */
+/*                  */
+.application-list {
+  padding: 2rem 1rem;
+}
+.application-list h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.applications {
+  padding: 2rem 1rem;
+  background-color: #d8d8d8; /* Match workflow background with transparency */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 2rem; /* Space from previous section */
+  margin-bottom: 2rem;
+}
+
+.applications-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between rows */
+}
+
+.app-row-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app-row-title {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #1d1d1d;
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.app-row {
+  position: relative;
+  height: auto; /* Allow dynamic height */
+  display: flex;
+  min-height: 400px;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center;
+  background-color: transparent; /* Match workflow item background */
+  border-radius: 6px;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 1rem;
+  width: 100%; /* Fit within container */
+  justify-content: flex-start; /* Distribute cards evenly */
+}
+
+/* Remove scrolling styles */
+.app-row {
+  overflow-x: visible; /* Remove scrolling */
+}
+
+.app-row::-webkit-scrollbar {
+  display: none; /* Already hidden, but redundant now */
+}
+
+
+
+/* Remove scroll button styles */
+.app-scroll-btn,
+.scroll-btn {
+  display: none; /* Hide scroll buttons */
+}
+
+/* Extend Button for All Applications */
+.extend-btn {
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0rem;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.extend-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Show Less Button for All Applications */
+.show-less-btn {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.show-less-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+/*                  */
+/* Discover Section */
+/*                  */
+.discover {
+  padding: 2rem 1rem;
+  background: #121317; /* Default color */
+  transition: background 2s ease; /* Smooth transition */
+}
+
+.discover h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3;
+}
+
+.category-row {
+  margin-bottom: 2rem;
+}
+
+.category-row h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/*                             */
+/* Row Container and Scrolling */
+/*                             */
+.row-container {
+  position: relative;
+  width: 100%; /* Full page width */
+  margin: 0; /* Remove centering */
+  padding: 0 1rem; /* Optional: Add padding to match section padding */
+}
+
+.app-row {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%; /* Ensure it takes full width of container */
+}
+
+.app-row::-webkit-scrollbar {
+  display: none;
+}
+
+.app-wrapper {
+  display: flex;
+  width: fit-content; /* Keep this for scrolling to work */
+  min-width: 100%; /* Ensures it’s at least as wide as the viewport */
+}
+
+/* No change needed for animations unless you want to adjust timing */
+.app-wrapper.scroll-left {
+  animation: scroll-left 90s linear infinite;
+}
+
+.app-wrapper.scroll-right {
+  animation: scroll-right 90s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/*                   */
+/* Application Cards */
+/*                   */
+.app-card {
+  width: 300px;
+  margin: 0 10px;
+  background-color: #E8ECEF;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
+  padding: 1rem;
+  text-align: left;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex; /* Add Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Push button to bottom */
+  height: 300px; /* Fixed height to ensure consistency */
+}
+
+.app-card img {
+  width: 100%;
+  height: 125px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure image fits without distortion */
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.app-card h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  color: #191919;
+}
+
+.app-card h4 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #191919;
+  margin-bottom: 0.5rem;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+}
+
+.app-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-card .keywords {
+  font-size: 0.9rem;
+  color: #858484;
+  margin-bottom: 0.5rem;
+  flex-grow: 0; /* Prevent keywords from expanding too much */
+}
+
+.app-card p {
+  font-size: 1rem;
+  color: #191919;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allow description to expand and push button down */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.app-card .show-more {
+  background: none;
+  border: none;
+  color: #191919;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  margin-top: auto; /* Ensure button stays at bottom */
+  text-align: left;
+}
+
+.show-more:hover {
+  text-decoration: underline;
+}
+
+/*                */
+/* Scroll Buttons */
+/*                */
+.scroll-btn {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #687165;
+  color: #1E2528;
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+/*               */
+/* Modal Styles */
+/*               */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008a;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px); /* Add blur effect to the background */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+}
+
+.modal-content {
+  color: #0e0e0e;
+  background-color: #e8ecefb6;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.accordion-btn {
+  background-color: #E8ECEF;
+  color: #1d1d1d;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-content p {
+  margin: 1;
+  margin-bottom: 2;
+  color: #1d1d1d;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+
+#modal-image {
+  width: 100%; /* Fit within parent */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  object-fit: cover; /* Ensure it behaves as a block element */
+  max-height: 400px;
+}
+
+#modal-image .open-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #E8ECEF;
+  color: #191919;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  width: fit-content; /* Ensure button size fits content */
+  display: inline-block; /* Ensure it renders */
+  z-index: 1;
+}
+
+#modal-image .open-btn:hover {
+  opacity: 1;
+}
+
+#modal-links {
+  margin-bottom: 1rem;
+}
+
+#modal-links a {
+  color: #E8ECEF;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+#modal-links a:hover {
+  color: #1d1d1d;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.all-apps-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.all-apps-btn a {
+  display: inline-block;
+  background-color: #28292b;
+  color: #1d1d1d;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.all-apps-btn a:hover {
+  background-color: #45474b;
+}
+
+/*          */
+/* Keywords */
+/*          */
+.keywords {
+  margin: 0rem 0;
+  font-size: 0.9rem;
+  color: #1d1d1da7; /* Dimmer text */
+}
+
+.keyword {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.keyword:hover {
+  color: #1d1d1dc6;
+  text-decoration: underline;
+}
+
+/*           */
+/* Workflows */
+/*           */
+.workflows {
+  padding: 2rem 1rem;
+  background-color: #d8d8d8;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
+}
+
+.workflows-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section */
+  display: flex;
+  gap: 0rem; /* Space between columns */
+}
+
+.workflows-title {
+  flex: 1; /* First column takes 1/3 of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  min-height: 500px; /* Match carousel height */
+  padding: 3rem;
+  background-color: transparent; /* Darker gray like the screenshot */
+}
+
+.discover-title {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #191919;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+  flex: 1; /* Allow titles to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  width: 100%; /* Ensure full width for centering */
+}
+
+.all-workflows-btn {
+  color: #191919;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  background: none; /* Remove button background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  margin-top: 1rem; /* Space below the titles */
+}
+
+.all-workflows-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.all-workflows-btn .arrow {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.workflows-container {
+  flex: 2; /* Carousel takes 2/3 of the space */
+  overflow: hidden;
+  height: 500px; /* Fixed height for square-like appearance */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #191919a2; /* Match workflow item */
+  margin-left: 0rem; /* Margin on the left for separation */
+}
+
+.workflows-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.workflow-item {
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+  background-color: #191919e1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.workflow-text {
+  flex: 0.8; /* Slightly less narrow, more text space */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.workflow-text h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+}
+
+.workflow-text p {
+  font-size: 1rem;
+  color: #E8ECEF;
+  margin-bottom: 0rem;
+}
+
+.workflow-image {
+  flex: 1; /* Maintain current image dimensions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workflow-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 6px 6px 0; /* Round only the right corners */
+}
+
+.explore-workflow-btn {
+  color: #E8ECEF;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  background: transparent; /* Transparent background */
+  border: 1px solid #ffffff; /* White border like search button */
+  border-radius: 4px; /* Rounded corners like search button */
+  padding: 0.5rem 1rem; /* Consistent padding */
+  align-self: flex-start; /* Align to the bottom */
+}
+
+.explore-workflow-btn:hover {
+  background-color: #ffffff;
+  color: #121317; /* Ensure readability on hover */
+}
+
+.workflow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff; /* White border */
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.workflow-btn.prev-btn {
+  left: 1rem;
+  content: "<"; /* Set to "<" symbol (note: use HTML for content) */
+}
+
+.workflow-btn.next-btn {
+  right: 1rem;
+  content: ">"; /* Set to ">" symbol (note: use HTML for content) */
+}
+
+.workflows-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #E8ECEF;
+  color: #121317;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.cta-btn:hover {
+  background-color: #ffffff;
+}
+
+/*             */
+/* FAQ Section */
+/*             */
+/* ... (previous styles unchanged) ... */
+
+/*           */
+/* FAQ Section */
+/*           */
+.faq {
+  padding: 2rem 1rem;
+  background-color: #d8d8d8; /* Match workflows background */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Match workflows shadow */
+}
+
+.faq-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0rem; /* Match workflows spacing, no gap between columns */
+}
+
+.faq-title {
+  flex: 0.5; /* Narrower, fixed proportion */
+  flex-shrink: 0; /* Prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to top */
+  height: 500px; /* Fixed height */
+  padding: 3rem;
+  background-color: transparent;
+}
+
+.faq-heading {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 4rem; /* Match discover-title */
+  color: #191919; /* Match discover-title */
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq-questions {
+  flex: 1; /* Fixed proportion for second column */
+  flex-shrink: 0; /* Prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #191919a2; /* Match workflows-container */
+  height: 500px; /* Fixed height */
+  border-radius: 0 0 0 10px; /* Only left corners rounded */
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919e1; /* Match workflow-item */
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0; /* Remove margin from the last item */
+}
+
+.faq-question-text {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem; /* Match workflow-text h3 */
+  color: #ffffff; /* Match workflow-text h3 */
+}
+
+.faq-arrow {
+  font-size: 1.5rem;
+  color: #ffffff; /* Match text color */
+}
+
+.faq-item:hover {
+  background-color: #191919; /* Slightly lighter on hover */
+}
+
+.faq-answer {
+  flex: 1; /* Fixed proportion for third column */
+  flex-shrink: 0; /* Prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #191919a2; /* Match workflows-container, no abrupt change */
+  height: 500px; /* Fixed height */
+  border-radius: 0 10px 10px 0; /* Only right corners rounded */
+  box-shadow: none; /* Remove shadow to blend with faq-questions */
+}
+
+.faq-answer-content {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1rem; /* Match workflow-text p */
+  color: #E8ECEF; /* Match workflow-text p */
+  display: none; /* Initially hidden */
+}
+
+.faq-answer-content.active {
+  display: block; /* Show when active */
+}
+
+/* ... (rest of the styles unchanged) ... */

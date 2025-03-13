@@ -4,57 +4,142 @@
   <meta charset="UTF-8" />
   <title>usebittensor - Explore Bittensor Apps</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Subnet of the Week</a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">Contact</a></li>
+  <header class="header">
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="header-left">
+      <h1 class="site-title">usebittensor</h1>
+    </div>
+    <nav class="header-middle">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#applications">APPS</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
+    <div class="header-right">
+      <button class="connect-btn">CONNECT</button>
+    </div>
   </header>
-
-  <!-- Subnet of the Week Banner -->
-  <section class="banner">
-    <h2>Subnet of the Week</h2>
-    <p>Highlighting an outstanding subnet project.</p>
+<br><br><br>
+  <section class="workflows">
+    <div class="workflows-wrapper">
+      <!-- First Column: Discover Workflows Title -->
+      <div class="workflows-title">
+        <h2 class="discover-title">Explore<br>Workflows</h2>
+        <a href="all-workflows.html" class="all-workflows-btn">All Workflows <span class="arrow">→</span></a>
+      </div>
+      </div>
+  
+      <!-- Second and Third Columns: Carousel -->
+      <div class="workflows-container">
+        <div class="workflows-track">
+          <div class="workflow-item">
+            <div class="workflow-text">
+              <h3>Build your Custom AI</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="workflow-custom-ai.html" class="explore-workflow-btn">See more</a>
+            </div>
+            <div class="workflow-image">
+              <img src="img/neural/neurons.webp" alt="Customize Your Own AI Preview">
+            </div>
+          </div>
+          <div class="workflow-item">
+            <div class="workflow-text">
+              <h3>Studies & Research</h3>
+              <p>Leverage AI tools for data analysis and research projects in academia.</p>
+              <a href="workflow-studies-research.html" class="explore-workflow-btn">See more</span></a>
+            </div>
+            <div class="workflow-image">
+              <img src="img/neural/neurons.webp" alt="Studies & Research Preview">
+            </div>
+          </div>
+          <div class="workflow-item">
+            <div class="workflow-text">
+              <h3>Implement an AI Model</h3>
+              <p>Deploy and optimize AI models for scalable business solutions.</p>
+              <a href="workflow-implement-ai.html" class="explore-workflow-btn">See more</span></a>
+            </div>
+            <div class="workflow-image">
+              <img src="img/neural/neurons.webp" alt="Implement an AI Model Preview">
+            </div>
+          </div>
+        </div>
   </section>
 
-  <!-- Carousel of Top 3 Platforms -->
-  <section class="carousel">
-    <h2>Top Platforms</h2>
-    <div class="carousel-container">
-      <!-- Example carousel items (you can update these) -->
-      <div class="carousel-item">
-        <a href="https://app.macrocosmos.ai/apex/chat" target="_blank">
-          <h3>SN1 Apex</h3>
-        </a>
+  <br><br><br><br><br><br>
+  <section class="hero-text">
+    <h2>The Future of Decentralized AI<br>Brought to you on Bittensor</h2>
+  </section>
+  <br>
+  <section id="applications" class="applications">
+    <div class="applications-wrapper">
+      <div class="app-row-section">
+        <div class="app-row-title">Featured Applications</div>
+        <div class="app-row">
+          <div class="app-wrapper" id="featured-row"></div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <a href="https://sybil.com" target="_blank">
-          <h3>SN4 Targon</h3>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://aion5100.ai" target="_blank">
-          <h3>SN6 Infinite Games</h3>
-        </a>
+      <div class="app-row-section">
+        <div class="app-row-title">All Applications</div>
+        <div class="app-row" id="all-apps-row">
+          <div class="app-wrapper" id="all-row"></div>
+        </div>
+        <div class="extend-btn" id="extend-all-apps">
+          <span class="extend-arrow">Show More</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Main Application List -->
-  <section class="application-list">
-    <h2>Explore All Bittensor Applications</h2>
-    <div class="app-grid" id="appGrid">
-      <!-- The script.js file will populate this grid dynamically -->
+  <!-- Modal for App Details -->
+  <div class="modal" id="app-modal">
+    <div class="modal-content">
+      <!-- Modal content will be populated dynamically -->
+    </div>
+  </div>
+  <br><br><br><br>
+  <section id="FAQ" class="hero-text">
+    <h2>FAQ Section Coming Soon.</h2>
+  </section>
+  <br><br><br>
+  <!-- FAQ Section -->
+  <!--<section class="faq">
+    <div class="faq-wrapper">
+      <div class="faq-title">
+        <h2 class="faq-heading">FAQ</h2>
+      </div>
+      <div class="faq-questions">
+        <div class="faq-item" data-question-id="1">
+          <span class="faq-question-text">Question 1</span>
+          <span class="faq-arrow">></span>
+        </div>
+        <div class="faq-item" data-question-id="2">
+          <span class="faq-question-text">Question 2</span>
+          <span class="faq-arrow">></span>
+        </div>
+        <div class="faq-item" data-question-id="3">
+          <span class="faq-question-text">Question 3</span>
+          <span class="faq-arrow">></span>
+        </div>
+        <div class="faq-item" data-question-id="4">
+          <span class="faq-question-text">Question 4</span>
+          <span class="faq-arrow">></span>
+        </div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Please select a question to see the answer.</p>
+        </div>
+      </div>
     </div>
   </section>
-
-  <script src="script.js"></script>
+  <br><br><br><br>-->
+  <!-- Scripts -->
+  <script src="data/applications.js"></script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,199 @@
+User-facing Consumer Applications:
+
+Apex (Chat App)
+Chat app with various models.
+https://app.macrocosmos.ai/apex/chat
+Subnet 1: Apex
+
+Sybil (AI Powered Search)  
+AI-powered language model designed to efficiently process and generate human-like text responses.
+https://sybil.com/
+Powered by Subnet 4: Targon
+
+Dippy Roleplay (Roleplay App) 
+Dippy is an AI-powered virtual platform that enables users to experience immersive, interactive, and engaging roleplay.
+https://www.dippy.ai/
+Powered by Subnet 11: Dippy Roleplay, Subnet 58: Dippy Speech and Subnet 4: Targon
+
+Gravity Beta (Data Scraping Tool)
+Dynamic Data Scraping tool 
+https://app.macrocosmos.ai/gravity/
+Powered by Subnet 13: Dataverse 
+
+Nebula Beta (Data Analysis)
+Visually stunning galactic Data Analysis tool.
+https://nebula.macrocosmos.ai/
+Powered by Subnet 13: Dataverse
+
+404 (3D Generation App)
+Generate 3D items from a text prompt.
+https://404.xyz/app
+Powered by Subnet 17: Three Gen
+
+Make It A Quote (Meme Generator)
+Transform text and tweets into visually appealing quotes and memes.
+https://makeitaquote.com/
+Powered by Subnet 18: Cortex.t, Subnet 19: Inference and Subnet 23: SocialTensor
+
+NicheTensor (Gen-AI Tool)
+Generate text-to-image, Image upscaling and Chat Completion. 
+https://app.nichetensor.com/
+Powered by Subnet 23: SocialTensor
+
+Inference (Playground)
+Inference that's permissionless, serverless, scalable, and powered by decentralisation.
+https://nineteen.ai/app
+Powered by Subnet 19: Inference
+
+Muse Beta (Speech App) 
+Voice app that allows users to have discussions with various personalities including "Cowboy" "Zoomer" and "Seductive". 
+https://www.sn21.ai/chat
+Powered by Subnet 21: Any-any 
+
+desearch.ai (AI-powered Search) 
+An informative search application which gives you detailed responses to text queries and provides informative links to responses.
+https://desearch.ai/
+Powered by Subnet 22: Desearch
+
+Focus (Productivity App)
+Focus helps you monetize your productivity one task at a time.
+https://focus.omega.inc/
+Powered by Subnet 24: Omega
+
+Storb Demo (Storage)
+An object storage subnet on the Bittensor network.
+https://storb.dev/
+Powered by Subnet 26: Storb 
+
+It's AI (Web App)
+Detect AI generated text. Turn text from American English to British English with Britishizer. Browser extension available. 
+https://app.its-ai.org/main/scan?
+Powered by Subnet 32: It's AI 
+
+AI Detector (Deepfake Detection)
+Detect AI generated image and video. Chrome extension available.
+https://thedetector.ai/
+Powered by Subnet 34: Bitmind
+
+Best Path (Path-finder APP)
+AI powered Path-finder application.
+https://bestpath.world/
+Powered by Subnet 43: Graphite
+
+Fast Inference (Playground)
+With Condenses AI, you get an optimized token length that allows you save on cost while increasing performance.
+https://www.condenses.ai/#playground 
+Powered by Subnet 47: Condenses AI
+
+Gradients (Training App)
+Gradients allows anyone in the world to train image and text models on Bittensor.
+https://gradients.io/app/
+Powered by Subnet 56: Gradients
+
+Dippy Speech (Speech App)
+Dippy is one of the world's leading AI companion apps with 1M+ users.
+https://www.dippyspeech.com/
+Powered by Subnet 58: Dippy Speech 
+
+Chutes (Serverless Compute) 
+Anyone can deploy AI models on decentralized infrastructure.
+https://chutes.ai/app
+Powered by Subnet 64: Chutes 
+
+FakeNews (Fact Checking App)
+A decentralized fact-checking platform built on the Bittensor network.
+https://www.highsky.io/fakenews#app_heading
+Powered by Subnet 66: FakeNews
+
+Glider.so (Chat App)
+Glider.io is a chat application powered by NinteenAI, Corcel, and Chutes.
+https://glider.so/ 
+Powered by Subnet 19: Inference and Subnet 64: Chutes
+
+Corcel (Platform)
+Text (Chat App)
+https://app.corcel.io/chat?version=chat
+Studio (Image Generation)
+https://app.corcel.io/image-studio/app/generate-ultra
+Avatar (Avatar Generation)
+https://app.corcel.io/image-studio/avatar/app
+Powered by Subnet 18: Cortex.t and Subnet 19: Inference
+
+________________________________________________________________________________________________________________
+
+Financial and Service-based Applications:
+
+AION5100 (Predictions Market)
+https://aion5100.ai/
+Powered by Subnet 6: Infinite Games
+
+Glitch Financial (Trading Platform)
+https://glitch.financial/
+Powered by Subnet 8: Proprietary Trading Network 
+
+Trade with Dale (Bybit Trading Bot)
+https://tradewithdale.ai/ 
+Powered by Subnet 8: Proprietary Trading Network 
+
+Sturdy.Finance (DeFi Yield Aggregator)
+https://v2.sturdy.finance/
+Powered by Subnet 10: Sturdy
+
+Bitads (Marketing App)
+https://firstads.ai/
+Powered by Subnet 16: Bitads
+
+MSPTech.ai (Managed Service Provider)
+https://msptech.ai/ 
+Powered by Subnet 20: Bitagent-Rizzo
+
+GoGoAgent (Agentic Services)
+https://gogoagent.ai/
+Powered by Subnet 20: Bitagent-Rizzo 
+
+Neural Internet (Cloud-compute Platform)
+https://app.neuralinternet.ai/
+Powered by Subnet 27: NI Compute
+
+Bettensor (Sports Betting)
+https://bettensor.com/games
+Powered by Subnet 30: Bettensor 
+
+Gen42 (Coding Assistant)
+https://gen42.ai/
+Powered by Subnet 45: SWE-Rizzo
+
+NextPlaceAI (Real Estate App)
+https://nextplace.ai/productPortal
+Powered by Subnet 48: NextPlaceAI
+
+Celium Compute (Cloud-compute Platform)
+https://celiumcompute.ai/
+Powered by Subnet 51: Compute Subnet
+
+___________________________________________________________________
+Other:
+Tensorplex Dojo (Human Generated Datasets)
+Complete diverse tasks to advance AI development. Work with miners on Subnet 52: Tensorplex Dojo to contribute to high-quality human-generated datasets.
+https://dojo.network/
+
+
+___________________________________________________________________
+Updated API URLs:
+subnet 4/targon/sybil https://targon.com/settings/keys
+subnet 19/inference https://nineteen.ai/app/api
+subnet 22/desearch/datura https://docs.datura.ai/apis/desearch-ai-search
+subnet 32/itsai https://app.its-ai.org/main/api/table
+subnet 34/bitmind https://docs.bitmind.ai/get-started 
+subnet 47/condenses https://www.condenses.ai/sign-in
+subnet 56/gradients https://gradients.io/app/api
+subnet 64/chutes https://chutes.ai/app/docs 
+subnet 18/cortex.t/corcel https://docs.corcel.io/reference/the-corcel-api
+
+
+mising:
+corcel
+makeitaquote
+nichetensor
+dojo
+bestpath

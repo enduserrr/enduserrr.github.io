@@ -1,0 +1,422 @@
+Note:
+I listed it by subnet. List them how you want on the site.
+Applications/services which don't quite fit into a particular subnet are listed at the bottom of the page.
+Subnets with no application information are only placeholders. Some are still difficult to find product information for. Others are left out entirely for obvious reasons.
+
+Format:
+Subnet Info
+Subnet Team (If applicable)
+Subnet Products
+___________________________________________________________________
+
+Subnet 1: Apex 
+Subnet Team: Macrocosmos https://macrocosmos.ai https://app.macrocosmos.ai/gravity/tasks
+Apex (Chat App)
+I'm Apex, a highly capable and responsible AI assistant specializing in web searches and general queries, dedicated to providing safe, accurate, and helpful information while upholding the highest standards of ethics and user privacy.
+https://app.macrocosmos.ai/apex/chat
+
+
+Subnet 2: Omron
+Subnet Team: Inference Labs https://inferencelabs.com/
+Omron (Subnet)
+A digital marketplace for Inference and Compute Verification on the Bittensor network and beyond. Designed by Inference Labs.
+https://omron.ai/
+
+
+Subnet 3: Templar
+Subnet Team: https://www.tplr.ai/
+
+
+Subnet 4: Targon 
+Subnet Team: Manifold Labs https://manifold.inc
+Sybil (AI Powered Search)  
+Sybil.com is an innovative AI-powered language model designed to efficiently process and generate human-like text responses. Leveraging the capabilities of Subnet 4, a cutting-edge bittensor subnet developed by Manifold Labs, Sybil.com excels in navigating through provided search queries and results to craft concise, relevant, and informative answers.
+https://sybil.com/
+
+
+Subnet 5: Open Kaito 
+Subnet Team: Kaito https://www.kaito.ai/
+Kaito (Web3.0 Insights)
+Empower Your Strategy with Web3.0 Insights. Kaito provides cutting-edge features and data for web3.0 teams globally.
+https://www.kaito.ai/pricing
+
+
+Subnet 6: Infinite Games
+Subnet Team: Infinite Games https://www.infinitegam.es/
+AION5100 (Predictions Market)
+The AION 5100 Predictions product is an advanced artificial intelligence (AI) solution designed to provide users with accurate and reliable predictions across various domains.
+https://aion5100.ai/
+
+
+Subnet 7: Subvortex
+Subnet Team: Subvortex https://www.subvortex.com/
+Subvortext (Subnet)
+SubVortex introduced an incentivized decentralized network of subtensor nodes. Subtensor nodes are pivotal elements within the Bittensor ecosystem. This delineates the structure, objectives, and mechanisms of SubVortex, which aims to foster decentralization, stability, and efficient resource allocation within the broader Bittensor network.
+
+
+Subnet 8: Proprietary Trading Network 
+Subnet Team: Taoshi https://www.taoshi.io/
+Glitch Financial (Trading Platform)
+Empower your portfolio with AI-driven trading strategies designed to navigate the markets intelligently and efficiently. Glitch Financial is more than a trading platform — it’s your gateway to building wealth through the power of our sophisticated trading strategies. 
+https://glitch.financial/
+
+Trade with Dale (Trading Bot)
+AI Copy Trading Bot powered by Bittensor Subnet 8 by Taoshi. Trade with Dale now on ByBit
+https://tradewithdale.ai/ 
+
+Timeless Trading (Trading Bot)
+Use your time for what you love while our consistent algorithmic trading bot works for you. An auto-trading platform that is as reliable as it is revolutionary 
+https://www.timeless.trading/
+
+
+Subnet 9: Pretraining
+"Coming Soon"
+
+
+Subnet 10: Sturdy 
+Subnet Team: Sturdy https://sturdy.finance/
+Strudy.Finance (DeFi)
+Earn AI-optimized yields, powered by Sturdy's Bittensor subnet. Unleash the full power of Sturdy V2 with newly launched Silos and Aggregators.
+https://v2.sturdy.finance/
+
+________________________________________________________________________
+
+Subnet 11: Dippy Roleplay 
+Subnet Team: Dippy (Roleplay App) 
+Dippy is an AI-powered virtual platform that enables users to experience immersive, interactive, and engaging roleplay.
+https://www.dippy.ai/
+
+
+Subnet 13: Dataverse 
+Subnet Team: Macrocosmos http://macrocosmos.ai/ https://app.macrocosmos.ai/gravity/tasks
+Gravity (Data Scraping)
+Gravity by Macrocosmos AI is visually stunning data scraping tool powered by Subnet 13.
+https://app.macrocosmos.ai/gravity/
+
+Nebula (Data Analysis)
+A cutting-edge data analysis application powered by Subnet 13.
+https://nebula.macrocosmos.ai/
+
+
+Subnet 15: Deval 
+Subnet Team: https://www.de-val.ai/
+de_val (API)
+Take your LLM to the next level with de_val’s advanced evaluation tools. Gain insights that will help you continuously improve performance across critical metrics, and enable you to do so with confidence.
+https://www.de-val.ai/product
+
+
+Subnet 16: Bitads
+Subnet Team: FirstTensor https://firsttensor.com/
+Bitads (Marketing App)
+Description: Built on top of Bittensor network. Powered by FirstTensor. Boost Your Brand and Sales with an Army of Influencers. Sell first and pay only when a sale occurs, aligning costs directly with results.
+https://firstads.ai/
+
+
+Subnet 17: Three Gen
+Subnet Team: 404 https://404.xyz/
+3D Generation App
+Build 3D items from a text prompt.
+https://404.xyz/app
+
+
+Subnet 18: Cortex.t
+Subnet Team: Toilaluan (Condenses.ai) Mog Machine (Taostats and Corcel) Fish (Datura.ai, Celium)
+Tau Vision (Subnet)
+Giving access to Bittensor with Decentralized subnet inference at scale.
+https://tauvision.ai/
+
+
+Subnet 19: Inference https://nineteen.ai/
+Subnet Team: Rayon Labs https://rayonlabs.ai/
+Inference (Playground)
+Inference that's permisonless, serverless, scalable, and powered by decentralisation.
+https://nineteen.ai/app
+
+
+Subnet 20: Bitagent-Rizzo https://rizzo.network/subnet-20/
+Subnet Team: Rizzo https://rizzo.network/
+MSPTech.ai (Managed Service Provider)
+MSPTech.AI’s vision is to revolutionize technical support using AI. We empower businesses to swiftly resolve complex issues, enhancing productivity and customer satisfaction. Join us in shaping a future where support challenges are met with confidence and speed. Currently in beta.
+https://msptech.ai/ 
+
+GoGoAgent (Agentic Services)
+AI tool function calling, improving efficiency in real-world applications. Browser plug-ins, Discord and Telegram bot demonstrations available. 
+https://gogoagent.ai/
+
+_______________________________________________________________________________
+
+
+Subnet 21: Any-any 
+Subnet Team: OMEGA Labs Inc. https://omega-labs.ai/
+Muse Beta (Speech App) 
+Voice app that allows users to have discussions with various personalities including "Cowboy" "Zoomer" and "Seductive". Beta version live now.
+https://www.sn21.ai/chat
+
+
+Subnet 22: Desearch 
+Subnet Team: Datura.ai http://datura.ai
+desearch.ai (AI-powered Search) 
+An informative search application which gives you detailed responses to text queries and provides informative links to responses.
+https://desearch.ai/
+
+
+Subnet 23: SocialTensor 
+Subnet Team: SocialTensor https://socialtensor.io/
+Social Apps and APIs
+Explore our range of innovative AI powered solutions and products. Discover how they can help transform your work or art.
+https://socialtensor.io/product.html
+
+
+Subnet 24: Omega
+Subnet Team: OMEGA Labs Inc. https://omega-labs.ai/
+Focus (Productivity App)
+The first app that pays you for focusing on the tasks that you want to do. Focus helps you monetize your productivity one task at a time.
+https://focus.omega.inc/
+
+
+Subnet 25: Mainframe
+"ComingSoon"
+
+
+Subnet 26: Storb 
+Storb Demo (Storage)
+An object storage subnet on the Bittensor network.
+https://storb.dev/
+
+
+Subnet 27: NI Compute
+Subnet Team: Neural Internet https://neuralinternet.ai
+Cloud-compute Platform
+Transforming compute power into a digital commodity—unlocking distributed, on-demand GPU cloud resources for AI acceleration.
+https://app.neuralinternet.ai/
+
+__________________________________________________________________________________
+
+Subnet 30: Bettensor https://bettensor.com/
+Subnet Team: Nickel5 https://www.nickel5.com/
+Bettensor (Sports Betting)
+Operating within the innovative Bittensor ecosystem, Bettensor specializes in harnessing collective intelligence to forecast sports outcomes with unprecedented accuracy.
+https://bettensor.com/games
+
+
+Subnet 32: It's AI 
+Subnet Team: It's AI https://its-ai.org/
+AI Detection Applications
+Identify ai-generated texts in one click.
+https://its-ai.org/#apps
+
+
+Subnet 33: ReadyAI
+Subnet Team: ReadyAI https://readyai.ai
+Transform your raw data with our Data Structuring Pipeline. 
+https://readyai.ai/p/data_pipeline
+
+
+Subnet 34: Bitmind 
+Subnet Team: Bitmind https://bitmind.ai/
+AI Detector
+Detect AI generated content and deepfakes. Chrome extension available 
+https://thedetector.ai/
+
+Deepfake Detection Tools
+Discover deepfake detection tools built on the BitMind system.
+https://bitmind.ai/apps
+
+
+Subnet 35: LogicNET https://logicnet.ai/
+Subnet Team: AIT Protocol https://aitprotocol.ai/
+Albert App
+https://albert.aitprotocol.ai
+
+
+Subnet 36: Autoppia 
+Subnet Team: Autoppia https://www.autoppia.com/
+Autoppia Chat
+Chat with your AI workers through Autoppia Chat. Easily understand and track what your AI worker is doing, which tools are being executed, and much more. 
+Autoppia Studio
+Autoppia Studio is an all-in-one AI platform for both users and developers. 
+https://app.autoppia.com/
+
+
+Subnet 37: Finetuning
+Subnet 38: Distributed Training 
+
+
+Subnet 39: Edgemaxxing 
+Awaiting verification on if this subnet powers any of WOMBO's apps.
+
+
+Subnet 40: Data Chunking
+Subnet Team: VectorChat https://vectorchat.ai/
+Vector Chat Beta (Roleplay Chat App)
+https://beta.vectorchat.ai/
+
+The VectorChat Beta has been succeeded by Toffee. 
+https://vectorchat.ai/toffee/general-information
+
+______________________________________________________________________________
+
+
+Subnet 41: Sportstensor
+Subnet Team: https://www.sportstensor.com/
+Sports Trading Platform
+Access institutional-grade predictions through the world's first decentralized sports intelligence network.
+https://www.sportstensor.com/#contact
+
+
+Subnet 43: Graphite 
+Subnet Team: https://graphite-ai.net/
+Our focus on solving graph-based problems starts with the Traveling Salesman Problem (TSP), a benchmark in route optimization. Building on this, we tackle advanced challenges like the multi-Traveling Salesman Problem (mTSP) and the multi-depot mTSP (mDmTSP), showcasing our expertise in complex graph optimization and driving innovation in this space.
+Path Visualizer V1 (Playground)
+https://graphite-ai.net/visualiser
+
+ProdNet (Request Beta Access)
+https://prodnet.graphite-ai.net/
+
+
+Subnet 44: Score
+https://www.scorevision.io/
+
+
+Subnet 45: SWE-Rizzo https://rizzo.network/subnet-45/
+Subnet Team: Rizzo https://rizzo.network
+Gen42 (Coding Assistant)
+Gen42, the first direct-to-consumer product of Subnet 45’s passion for AI-driven software engineering, is transforming the way developers code. By combining intelligent code completion, rigorous benchmarking, and cross-subnet collaboration, Gen42 delivers a production-ready, high-performance coding assistant. Fueled by SN45’s commitment to innovation, it ensures that AI-assisted development is faster, smarter, and seamlessly integrated into modern workflows.
+https://gen42.ai/
+
+
+Subnet 46: Neural 3D 
+Subnet Team: Neural 3D https://goneural.ai/
+Generative AI Applications
+Generate high-quality 3D models effortlessly with our app and plugins — completely free. Enhance your workflow and streamline asset creation with the power of AI.
+https://app.goneural.ai/public-gallery
+
+
+Subnet 47: Condenses AI https://www.condenses.ai/
+Fast Inference (Playground)
+With Condenses AI, you get an optimized token length that allows you save on cost while increasing performance.
+https://www.condenses.ai/#playground 
+
+
+Subnet 48: NextPlace AI https://nextplace.ai/
+Subnet Team: Nickel5 https://www.nickel5.com/
+NextPlaceAI Product Portal
+Leveraging the power of AI harnessed by the Bittensor framework, we're building the next best Real Estate market negotiator. Discover what your home is likely to sell for, identify housing trends in real estate markets across the United States, earn Tao by unleashing your own AI models in our subnet, and so much more.
+https://nextplace.ai/productPortal
+
+
+Subnet 49: Hivetrain AutoML
+Subnet Team: 
+https://hivetensor.com/
+
+___________________________________________________________________________________
+
+Subnet 50: Synth 
+Subnet Team: MODE https://www.mode.network/
+
+
+Subnet 51: Compute Subnet
+Subnet Team: Datura.ai https://www.datura.ai/
+Celium Compute (Cloud-compute Platform)
+High-performance GPUs. Unmatched pricing. Run high performance compute workloads at a fraction of the cost of traditional providers.
+https://celiumcompute.ai/
+
+
+Subnet 52: Tensorplex Dojo 
+Subnet Team: Tensorplex https://www.tensorplex.ai/
+Tensorplex Dojo (Human Data Labeling)
+Complete diverse tasks to advance AI development. Contribute to powerful multimodal models through crowd-sourced intelligence. Accelerate decentralized AI while earning rewards. Welcome to Dojo Network.
+https://dojo.network/
+
+
+Subnet 53: Efficient Frontier
+Subnet 54: WebGenie 
+Subnet 55: Precog
+
+ 
+Subnet 56: Gradients https://gradients.io/
+Subnet Team: Rayon Labs https://rayonlabs.ai/ 
+Gradients (User Training Application)
+Gradients allows anyone in the world to train image and text models on Bittensor - the decentralized AI blockchain.
+https://gradients.io/app/
+
+
+Subnet 57: Gaia https://www.gaiaresearch.ai/
+Subnet Team: Nickel5 https://www.nickel5.com/
+
+Subnet 58: Dippy Speech
+Dippy Speech (Speech App)
+Dippy is one of the world's leading AI companion apps with 1M+ users. The app has ranked #3 on the App Store in countries like Germany, been covered by publications like Wired magazine and the average Dippy user spends 1+ hour on the app.
+https://www.dippyspeech.com/
+
+
+Subnet 59: Agent Arena
+Masa 
+
+
+Subnet 60: Bitsec 
+https://bitsec.ai/
+Bitsec Scan (Code Exploits)
+Harness the power of AI to detect and analyze vulnerabilities in your subnets with unparalleled accuracy and speed.
+https://bitsec.ai/scan
+
+
+Subnet 61: Red Team https://www.theredteam.io/
+Red Team (Subnet)
+Transform your skills in circumventing and breaking detection mechanisms into meaningful, rewarding work. Compete, innovate, and earn in a safe, decentralized platform built for the sharpest minds in cybersecurity.
+
+
+Subnet 62: Agentao
+https://www.taoagents.ai/
+
+
+Subnet 63: Alpha Trader Exchange
+
+
+Subnet 64: Chutes https://chutes.ai/ 
+Subnet Team: Rayon Labs https://rayonlabs.ai/
+Chutes (Serverless Compute) 
+Now anyone can deploy AI models on decentralized infrastructure. Within a few clicks, you can select and deploy any model - from LLMs to custom code. It's simple, efficient, and most importantly powerful, with built-in performance monitoring and cost optimization.
+https://chutes.ai/platform
+https://chutes.ai/app
+
+
+Subnet 65: Tao Privacy Network
+
+
+Subnet 66: FakeNews
+Subnet Team: HighSky https://www.highsky.io
+FakeNews App
+FakeNews is a decentralized fact-checking platform built on the Bittensor network. It leverages advanced AI models to analyze and verify the credibility of news stories, facts, social media posts, and other digital content in real time.
+https://www.highsky.io/fakenews#app_heading
+
+Subnet 67:
+ 
+Subnet 68: Nova https://www.metanova-labs.com/subnet
+Subnet Team: Metanova Labs https://www.metanova-labs.com/
+
+
+Subnet 69:
+
+70
+71
+72
+73
+
+
+Other Applications and Services:
+
+Corcel (Applications and API)
+Build your AI-powered apps more quickly and with less cost with the power of decentralized AI, with Corcel’s global infrastructure, powered by Bittensor.
+https://corcel.io/
+
+Glider.so (Chat App)
+Glider.io is a chat application powered by NinteenAI, Corcel, and Chutes.
+https://glider.so/ 
+
+
+
+
+
+
+
