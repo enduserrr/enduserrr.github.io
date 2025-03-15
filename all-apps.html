@@ -2,43 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>All Applications - usebittensor</title>
+  <title>usebittensor - All Apps</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="all-applications">
+  <header class="header">
+    <div class="hamburger" id="hamburger">☰</div>
+    <div class="header-left">
+      <h1 class="site-title">usebittensor</h1>
+    </div>
+    <nav class="header-middle">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="all-apps.html">WORKFLOWS</a></li>
+        <li><a href="all-apps.html">APPS</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <button class="connect-btn">FAQ</button>
+    </div>
+  </header>
+
+  <br><br><br><br>
+  <section class="hero-text">
     <h2>All Applications</h2>
-    <div id="category-grids"></div>
+  </section>
+  <br><br>
+
+  <section class="applications">
+    <div class="applications-wrapper" id="all-apps-by-category">
+      <!-- Categories and apps will be populated dynamically -->
+    </div>
   </section>
 
-  <!-- Popup Modal -->
-  <div id="app-modal" class="modal">
+  <!-- Modal for App Details -->
+  <div class="modal" id="app-modal">
     <div class="modal-content">
-      <span class="close-btn">×</span>
-      <img id="modal-image" src="" alt="Application Image">
-      <div id="modal-links"></div>
-      <div class="accordion">
-        <button class="accordion-btn">Description</button>
-        <div class="accordion-content">
-          <p id="modal-description"></p>
-        </div>
-        <button class="accordion-btn">Pricing</button>
-        <div class="accordion-content">
-          <p id="modal-pricing"></p>
-        </div>
-        <button class="accordion-btn">Get Started</button>
-        <div class="accordion-content">
-          <p id="modal-get-started"></p>
-        </div>
-      </div>
+      <!-- Modal content will be populated dynamically -->
     </div>
   </div>
 
+  <br><br><br><br>
+
   <!-- Scripts -->
-  <script src="data/applications.js"></script>
+  <script src="scripts/applications.js"></script>
   <script src="scripts/utils.js"></script>
-  <script src="scripts/animations.js"></script>
+  <script src="scripts/script.js"></script><!--is this needed?-->
   <script src="scripts/all-apps.js"></script>
 </body>
 </html>
