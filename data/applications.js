@@ -39,7 +39,6 @@ const applications = [
     image: "img/apps/muse.webp",
     shortDesc: "Voice app for discussions with various personalities.",
     longDesc: "Voice app that allows users to have discussions with various personalities including 'Cowboy', 'Zoomer', and 'Seductive'.\nPowered by Any-any (SN21)",
-
     social: {},
     keywords: ["Chat Bots", "Companion", "Voice"]
   },
@@ -47,7 +46,7 @@ const applications = [
     name: "Dippy Speech",
     link: "https://www.dippyspeech.com/",
     category: "Communication Tools",
-    image: "img/apps/dippy-speech.webp",
+    image: "img/apps/dippyspeech.webp",
     shortDesc: "AI companion app with 1M+ users.",
     longDesc: "Dippy is one of the world's leading AI companion apps with 1M+ users.\nPowered by Dippy Speech (SN58)",
     social: {},
@@ -67,7 +66,7 @@ const applications = [
     name: "Corcel",
     link: "https://app.corcel.io/",
     category: "Communication Tools",
-    image: "img/apps/corcerl.webp",
+    image: "img/apps/corcel.webp",
     shortDesc: "Platform for chat, image generation, and avatar creation.",
     longDesc: "Corcel offers a text chat app, image generation studio, and avatar creation tools.\nPowered by Cortex.t (SN18), Inference (SN19)",
     social: { "Text": "https://app.corcel.io/chat?version=chat", "Studio": "https://app.corcel.io/image-studio/app/generate-ultra", "Avatar": "https://app.corcel.io/image-studio/avatar/app" },
@@ -142,7 +141,7 @@ const applications = [
     name: "Make It A Quote",
     link: "https://makeitaquote.com/",
     category: "Creative Tools",
-    image: "img/apps/makeitaquite.webp",
+    image: "img/apps/makeitaquote.webp",
     shortDesc: "Transform text and tweets into quotes and memes.",
     longDesc: "Transform text and tweets into visually appealing quotes and memes.\nPowered by Cortex.t (SN18), Inference (SN19), SocialTensor (SN23)",
     social: {},
@@ -160,9 +159,9 @@ const applications = [
   },
   {
     name: "It's AI",
-    link: "https://app.its-ai.org/main/scan?",
+    link: "https://its-ai.org",
     category: "Creative Tools",
-    image: "img/apps/its-ai.webp",
+    image: "img/apps/itsai.webp",
     shortDesc: "Detect AI-generated text and convert to British English.",
     longDesc: "Detect AI generated text. Turn text from American English to British English with Britishizer. Browser extension available.\nPowered by It's AI (SN32)",
     social: {},
@@ -170,10 +169,10 @@ const applications = [
   },
   {
     name: "AI Detector",
-    link: "https://thedetector.ai/",
+    link: "https://bitmind.ai/apps",
     category: "Creative Tools",
     image: "img/apps/bitmind.webp",
-    shortDesc: "Detect AI-generated image and video.",
+    shortDesc: "Detect deepfakes like AI-generated image and video.",
     longDesc: "Detect AI generated image and video. Chrome extension available.\nPowered by Bitmind (SN34)",
     social: {},
     keywords: ["Detect AI"]
@@ -214,7 +213,7 @@ const applications = [
     name: "Fast Inference",
     link: "https://www.condenses.ai/#playground",
     category: "Infrastructure and Compute",
-    image: "img/apps/condence-ai.webp",
+    image: "img/apps/condence.webp",
     shortDesc: "Optimized token length for cost savings and performance.",
     longDesc: "With Condenses AI, you get an optimized token length that allows you save on cost while increasing performance.\nPowered by Condenses AI (SN47)",
     social: {},
@@ -246,7 +245,7 @@ const applications = [
     name: "Neural Internet",
     link: "https://app.neuralinternet.ai/",
     category: "Infrastructure and Compute",
-    image: "img/apps/neuralinternet.webp",
+    image: "img/apps/sn27.webp",
     shortDesc: "Cloud compute platform.",
     longDesc: "Cloud compute platform powered by Subnet 27: NI Compute.\nPowered by NI Compute (SN27)",
     social: {},
@@ -298,7 +297,7 @@ const applications = [
     name: "NextPlaceAI",
     link: "https://nextplace.ai/productPortal",
     category: "Business Services",
-    image: "img/apps/nextplace-ai.webp",
+    image: "img/apps/nextplace.webp",
     shortDesc: "Real estate application.",
     longDesc: "Real estate app powered by Subnet 48: NextPlaceAI.\nPowered by NextPlaceAI (SN48)",
     social: {},
@@ -320,7 +319,7 @@ const applications = [
     name: "Glitch Financial",
     link: "https://glitch.financial/",
     category: "Financial Tools",
-    image: "img/apps/glitch-fi.webp",
+    image: "img/apps/glitch.webp",
     shortDesc: "Trading platform.",
     longDesc: "Trading platform powered by Subnet 8: Proprietary Trading Network.\nPowered by Proprietary Trading Network (SN8)",
     social: {},
@@ -387,6 +386,15 @@ const applications = [
     longDesc: "AI powered Path-finder application.\nPowered by Graphite (SN43)",
     social: {},
     keywords: ["Directions"]
+  },
+  {
+    name: "Sportstensor",
+    link: "https://www.sportstensor.com/",
+    category: "Other",
+    image: "img/apps/sportstensor.webp",
+    shortDesc: "Sports predictions network.",
+    longDesc: "Institutional-grade sports predictions through the world's first decentralized intelligence network.",
+    keywords: ["Prediction models"]
   }
 ];
 

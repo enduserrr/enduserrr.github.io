@@ -7,7 +7,7 @@
 /* Body Styling */
 body {
   font-family: "Inter", Helvetica, sans-serif;
-  background-color: #babab4;
+  background-color: #d0d1d1;
   color: #E8ECEF;
   line-height: 1.6;
   font-weight: 400;
@@ -28,6 +28,7 @@ body {
   margin-right: auto;
   word-wrap: break-word;
   letter-spacing: 0.1em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight text lift */
 }
 
 .hero-text h3 {
@@ -139,6 +140,33 @@ body {
 .connect-btn:hover {
   background: #d8d8d8;
   color: #d8d8d8;
+}
+
+.connect-btn {
+  color: #ffffff; /* Already white, matching hover state */
+  font-size: 0.75rem;
+  font-family: "Poppins", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d8d8ac; /* Light gray base color */
+  border: 2px solid #d8d8d8ac; /* Subtle molded edge */
+  padding: 0.5rem 1rem; /* Increased padding for depth */
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), /* Main shadow for lift */
+              0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle side lift */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight text lift */
+}
+
+.connect-btn:hover {
+  background-color: #d8d8d8ac; /* Lighter on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), /* Enhanced shadow on hover */
+              0 3px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Slight lift on hover */
 }
 
 /* Mobile Styling */
@@ -389,8 +417,8 @@ body {
 
 .applications {
   padding: 2rem 1rem;
-  background-color: #d8d8d8; /* Match workflow background with transparency */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
+  background-color: #d8d8d8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
@@ -414,10 +442,10 @@ body {
 .app-row-title {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.5rem;
-  color: #1d1d1d;
+  color: #2c2b2b;
   margin: 0;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   margin-left: 2rem;
   margin-top: 1rem;
 }
@@ -426,13 +454,13 @@ body {
   position: relative;
   height: auto; /* Allow dynamic height */
   display: flex;
-  min-height: 400px;
+  min-height: 450px;
   flex-direction: column; /* Stack cards vertically */
   align-items: center;
   background-color: transparent; /* Match workflow item background */
   border-radius: 6px;
   padding: 0 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .app-wrapper {
@@ -462,45 +490,60 @@ body {
 
 /* Extend Button for All Applications */
 .extend-btn {
-  color: #1d1d1d;
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 1.25rem;
   font-family: "Poppins", Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
-  background: none;
-  border: none;
-  padding: 0;
-  margin-top: 0rem;
+  background-color: #d8d8d8; /* Light gray base color */
+  border: 1px solid #c8c8c8da; /* Subtle molded edge */
+  padding: 0.5rem 1.8rem; /* Increased padding for depth */
   align-self: center;
   cursor: pointer;
+  border-radius: 5px;
   font-weight: 700;
+  box-shadow: 0 2px 4px #c8c8c8, /* Main shadow for lift */
+              0 1px 2px #c8c8c8; /* Subtle side lift */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+  text-shadow: 0 1px 2px #f5f4f41a; /* Slight text lift */
+  letter-spacing: 0.1em;
 }
 
 .extend-btn:hover {
   color: #ffffff;
-  text-decoration: underline;
+  background-color: #e6e4e4; /* Lighter on hover */
+  box-shadow: 0 6px 12px #c8c8c8, /* Enhanced shadow on hover */
+              0 3px 6px #c8c8c8;
+  transform: translateY(-2px); /* Slight lift on hover */
+
 }
 
 /* Show Less Button for All Applications */
 .show-less-btn {
-  color: #ffffff;
+  color: #ffffff; /* Already white, matching hover state */
   font-size: 1rem;
   font-family: "Poppins", Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: none;
-  border: none;
-  padding: 0;
+  background-color: #E8ECEF; /* Light gray base color */
+  border: 2px solid #d8d8d8; /* Subtle molded edge */
+  padding: 0.5rem 1rem; /* Increased padding for depth */
   margin-top: 1rem;
   align-self: center;
   cursor: pointer;
   font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), /* Main shadow for lift */
+              0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle side lift */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight text lift */
 }
 
 .show-less-btn:hover {
-  color: #ffffff;
-  text-decoration: underline;
+  background-color: #d8d8d8; /* Lighter on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), /* Enhanced shadow on hover */
+              0 3px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Slight lift on hover */
 }
 
 
@@ -587,7 +630,7 @@ body {
 .app-card {
   width: 300px;
   margin: 0 10px;
-  background-color: #E8ECEF;
+  background-color: #d7d8db;
   border-radius: 6px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
   padding: 1rem;
@@ -597,12 +640,12 @@ body {
   display: flex; /* Add Flexbox */
   flex-direction: column; /* Stack items vertically */
   justify-content: space-between; /* Push button to bottom */
-  height: 300px; /* Fixed height to ensure consistency */
+  height: 350px; /* Fixed height to ensure consistency */
 }
 
 .app-card img {
   width: 100%;
-  height: 125px; /* Fixed height for consistency */
+  height: 175px; /* Fixed height for consistency */
   object-fit: cover; /* Ensure image fits without distortion */
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -614,14 +657,14 @@ body {
   font-weight: 600;
   margin-bottom: 0rem;
   margin-top: 0.5rem;
-  color: #191919;
+  color: #1d1d1d;
 }
 
 .app-card h4 {
   font-family: "Poppins", Helvetica, sans-serif;
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #191919;
+  color: #1d1d1d;
   margin-bottom: 0.5rem;
 }
 
