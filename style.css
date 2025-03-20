@@ -191,7 +191,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #16181f;
+    background-color: #191919;
     flex-direction: column;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -204,6 +204,107 @@ body {
   .nav-menu li {
     margin: 0.5rem 0;
   }
+}
+
+/* Example Workflow Section */
+.example-workflow {
+  padding: 2rem 1rem;
+  background-color: transparent; /* Match applications section background */
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.example-workflow-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.example-title {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7rem;
+  position: relative;
+}
+
+.workflow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  position: relative;
+}
+
+.workflow-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  width: 2rem;
+  height: 2px;
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+
+.workflow-step .app-card {
+  background-color: #d8d8d8;
+  border-radius: 8px;
+  border: 1px solid rgb(207, 207, 207); /* Subtle molded edge */
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 150px;
+  max-height: 175px;
+  transition: all 0.3s ease;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.workflow-step .app-card:hover {
+  transform: translateY(-5px);
+  background-color: #191919;
+}
+
+.workflow-step .app-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  justify-content: first baseline;
+}
+
+.workflow-step .app-card h4 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Hide description, keywords, and show-more button in workflow app cards */
+.workflow-step .app-card p,
+.workflow-step .app-card .keywords,
+.workflow-step .app-card .show-more {
+  display: none;
+}
+
+.step-title {
+  color: #E8ECEF;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 /*                          */
@@ -546,6 +647,45 @@ body {
   transform: translateY(-2px); /* Slight lift on hover */
 }
 
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  /* Featured Apps: 2 cards per slide, scrollable */
+  .featured-apps-row {
+    overflow-x: auto; /* Enable horizontal scrolling on mobile */
+    scroll-snap-type: x mandatory; /* Snap to each slide */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .featured-apps-wrapper {
+    flex-wrap: nowrap; /* Prevent wrapping, create a horizontal row */
+    width: 200%; /* 2 slides (100% each) */
+    scroll-snap-align: start; /* Snap to the start of each slide */
+  }
+
+  .featured-apps-wrapper .app-card {
+    flex: 0 0 calc(50% - 0.5rem); /* 2 cards per slide (50% width minus gap) */
+    max-width: calc(50% - 0.5rem); /* Ensure 2 cards fit side by side */
+  }
+
+  /* All Apps: 2 cards side by side, non-scrollable */
+  #all-apps-row .app-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #all-apps-row .app-card {
+    flex: 0 0 calc(50% - 0.5rem); /* 2 cards per row (50% width minus gap) */
+    max-width: calc(50% - 0.5rem); /* Ensure 2 cards fit side by side */
+  }
+
+  /* Adjust button spacing */
+  .extend-btn,
+  .show-less-btn {
+    margin-top: 1rem;
+  }
+}
 
 /*                  */
 /* Discover Section */

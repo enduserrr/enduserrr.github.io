@@ -163,5 +163,50 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("All row wrapper or extend button not found!");
     }
   }
+  function populateExampleWorkflow() {
+    console.log("Starting populateExampleWorkflow");
+    if (!window.applications || !Array.isArray(window.applications)) {
+      console.error("window.applications is not available or not an array:", window.applications);
+      return;
+    }
+
+    const workflowSteps = document.querySelector('#workflow-steps');
+    if (!workflowSteps) {
+      console.error("Workflow steps container not found! Check if #workflow-steps exists in the DOM.");
+      return;
+    }
+
+    // Example workflow: Select 3 apps (you can adjust based on your apps)
+    const exampleApps = window.applications.slice(0, 3); // Take first 3 apps for demo
+    //const exampleApps = window.applications.filter(app => ["Neural Ai", "App 2", "App 3"]);
+
+    exampleApps.forEach((app, index) => {
+      const step = document.createElement("div");
+      step.className = "workflow-step";
+
+      // Create simplified app card (only image and header)
+      const appCard = document.createElement("div");
+      appCard.className = "app-card";
+      appCard.innerHTML = `
+        <img src="${app.image}" alt="${app.name} Preview">
+        <h4>${app.name}</h4>
+      `;
+
+      // Make the card clickable
+      appCard.addEventListener("click", () => openModal(app));
+
+      step.appendChild(appCard);
+      workflowSteps.appendChild(step);
+    });
+
+    console.log("Finished populating example workflow");
+  }
+
+  // Call existing functions
+  populateApplications();
+  // ... (other existing function calls, e.g., FAQ functionality) ...
+
+  // Call new function
+  populateExampleWorkflow();
   populateApplications();
 });
