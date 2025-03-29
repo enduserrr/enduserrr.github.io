@@ -1,4 +1,59 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Header Scroll Functionality
+  const header = document.querySelector('.header');
+  let lastScroll = 0;
+  let scrollTimeout;
+
+  if (header) {
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      // Clear the timeout if it exists
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+
+      // Show header if scrolling up or at the top
+      if (currentScroll <= 0 || currentScroll < lastScroll) {
+        header.classList.remove('hidden');
+      } else {
+        // Hide header if scrolling down
+        header.classList.add('hidden');
+      }
+
+      // Set a timeout to show header after scrolling stops
+      scrollTimeout = setTimeout(() => {
+        header.classList.remove('hidden');
+      }, 150);
+
+      lastScroll = currentScroll;
+    });
+  }
+
+  // Version Toggle Functionality
+  const versionToggle = document.getElementById("version-toggle");
+  const body = document.body;
+
+  if (versionToggle) {
+    // Check if there's a saved preference
+    const savedVersion = localStorage.getItem("siteVersion");
+    if (savedVersion === "mobile") {
+      body.classList.add("mobile-version");
+      versionToggle.classList.add("mobile");
+      versionToggle.querySelector(".toggle-text").textContent = "Desktop";
+    }
+
+    versionToggle.addEventListener("click", () => {
+      body.classList.toggle("mobile-version");
+      versionToggle.classList.toggle("mobile");
+      const isMobile = body.classList.contains("mobile-version");
+      versionToggle.querySelector(".toggle-text").textContent = isMobile ? "Desktop" : "Mobile";
+      
+      // Save preference
+      localStorage.setItem("siteVersion", isMobile ? "mobile" : "desktop");
+    });
+  }
+
   // Hamburger Menu
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
@@ -176,9 +231,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Example workflow: Select 3 apps (you can adjust based on your apps)
-    const exampleApps = window.applications.slice(0, 3); // Take first 3 apps for demo
-    //const exampleApps = window.applications.filter(app => ["Neural Ai", "App 2", "App 3"]);
+    // Select specific apps: Chutes, Gradients, and Nineteen
+    const exampleApps = window.applications.filter(app => 
+      ["Chutes", "Gradients", "Nineteen"].includes(app.name)
+    );
+
+    if (exampleApps.length !== 3) {
+      console.error("Could not find all required apps. Found:", exampleApps.length);
+      return;
+    }
 
     exampleApps.forEach((app, index) => {
       const step = document.createElement("div");
@@ -199,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
       workflowSteps.appendChild(step);
     });
 
-    console.log("Finished populating example workflow");
+    console.log("Finished populating example workflow with Chutes, Gradients, and Nineteen");
   }
 
   // Call existing functions

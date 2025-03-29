@@ -190,7 +190,7 @@ const applications = [
 
   // Infrastructure and Compute
   {
-    name: "Inference",
+    name: "Nineteen",
     link: "https://nineteen.ai/app",
     category: "Infrastructure and Compute",
     image: "img/apps/nineteen.webp",
