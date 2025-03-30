@@ -194,8 +194,8 @@ const applications = [
     link: "https://nineteen.ai/app",
     category: "Infrastructure and Compute",
     image: "img/apps/nineteen.webp",
-    shortDesc: "Permissionless, serverless AI inference.",
-    longDesc: "Inference that's permissionless, serverless, scalable, and powered by decentralisation.\nPowered by Inference (SN19)",
+    shortDesc: "Lightning-Fast AI Inference.",
+    longDesc: "Permissionless, serverless and scalable inference.\nPowered by Inference (SN19)",
     social: {},
     keywords: ["Compute", "Infrastructure"]
   },
@@ -222,20 +222,19 @@ const applications = [
   {
     name: "Gradients",
     link: "https://gradients.io/app/",
-    category: "Infrastructure and Compute",
+    category: "Training",
     image: "img/apps/gradients.webp",
-    shortDesc: "Train image and text models on Bittensor.",
+    shortDesc: "Train Custom AI Models On-Demand.",
     longDesc: "Gradients allows anyone in the world to train image and text models on Bittensor.\nPowered by Gradients (SN56)",
-
     social: {},
-    keywords: ["AI Training", "Compute"]
+    keywords: ["Train AI"]
   },
   {
     name: "Chutes",
     link: "https://chutes.ai/app",
-    category: "Infrastructure and Compute",
+    category: "Compute",
     image: "img/apps/chutes.webp",
-    shortDesc: "Deploy AI models on decentralized infrastructure.",
+    shortDesc: "Serverless AI Compute.",
     longDesc: "Anyone can deploy AI models on decentralized infrastructure.\nPowered by Chutes (SN64)",
 
     social: {},

@@ -270,4 +270,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Call new function
   populateExampleWorkflow();
   populateApplications();
+  
+  // FAQ Accordion Functionality
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  
+  faqQuestions.forEach(question => {
+    const header = question.querySelector('.question-header');
+    
+    header.addEventListener('click', () => {
+      // Close all other questions first
+      faqQuestions.forEach(q => {
+        if (q !== question && q.classList.contains('active')) {
+          q.classList.remove('active');
+        }
+      });
+      
+      // Toggle the clicked question
+      question.classList.toggle('active');
+    });
+  });
 });
