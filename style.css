@@ -1,3 +1,52 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Light.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Regular.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Medium.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Semibold.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Bold.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uncut Sans';
+  src: url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Book.woff2') format('woff2'),
+       url('../fonts/uncut_sans-1.3.4/Webfonts/UncutSans-Book.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,45 +55,60 @@
 
 /* Body Styling */
 body {
-  font-family: "Inter", Helvetica, sans-serif;
-  background-color: #c6c5c4;
+  background-color: #c6c4c3;
+ /*font-family: "Uncut Sans", Helvetica, sans-serif;
   color: #E8ECEF;
   line-height: 1.6;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1rem;*/
   padding-top: 70px; /* Adjust this value based on your header height */
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #191919;
+  line-height: 1.5;
+  text-align: left;
 }
 
 /* Hero Introduction */
 .hero-introduction {
-  text-align: center;
   padding: 3rem 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto 2rem;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
 .hero-title {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 5.5rem;
   font-weight: 700;
   color: #191919;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.0rem;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .hero-subtitle {
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
   color: #191919;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 1000px;
+
 }
 
 .hero-text h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   max-width: 800px;
@@ -61,7 +125,7 @@ body {
 }
 
 .hero-text h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
   max-width: 800px;
@@ -72,15 +136,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   word-wrap: break-word;
-}
-
-.hero-text p {
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: lighter;
-  color: #E8ECEF;
-  max-width: 900px; /* Slightly wider for more text */
-  margin: 0 auto; /* Centers the paragraph */
 }
 
 /*                  */
@@ -132,9 +187,9 @@ body {
 }
 
 .site-title {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #1d1d1d;
   margin: 0;
 }
@@ -160,7 +215,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
 }
 
 .nav-menu li a:hover {
@@ -173,36 +228,21 @@ body {
 }
 
 .connect-btn {
-  background: transparent;
-  border: 2px solid #1d1d1d;
-  color: #1d1d1d;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Poppins", Helvetica, sans-serif;
-}
-
-.connect-btn:hover {
-  background: #d8d8d8;
-  color: #d8d8d8;
-}
-
-.connect-btn {
   color: #ffffff; /* Already white, matching hover state */
   font-size: 0.75rem;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: #d8d8d8ac; /* Light gray base color */
-  border: 2px solid #d8d8d8ac; /* Subtle molded edge */
   padding: 0.5rem 1rem; /* Increased padding for depth */
   margin-top: 1rem;
   align-self: center;
   cursor: pointer;
-  font-weight: 700;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), /* Main shadow for lift */
-              0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle side lift */
+  font-weight: 400;
+  border: 1px solid #23222077;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+              0 2px 4px rgba(0, 0, 0, 0.2);*/
   transition: all 0.3s ease; /* Smooth transition for hover */
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight text lift */
 }
@@ -217,12 +257,12 @@ body {
 /* Version Toggle Button */
 .version-toggle {
   background-color: #d8d8d8;
-  border: 1px solid #c8c8c8da;
   color: #191919;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  border: 1.2px solid #232220d9;
   cursor: pointer;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -307,14 +347,18 @@ body {
     text-align: center;
   }
 
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
   .hero-title {
+    text-align: left;
     font-size: 2.5rem;
-    padding: 0 1rem;
   }
   
   .hero-subtitle {
-    font-size: 1.1rem;
-    padding: 0 1rem;
+    text-align: left;
   }
 
   .hero-text h2 {
@@ -515,7 +559,7 @@ body {
     background: none;
     border: none;
     color: #191919;
-    font-family: "Poppins", Helvetica, sans-serif;
+    font-family: "Uncut Sans", Helvetica, sans-serif;
     font-size: 1.2rem;
     cursor: pointer;
   }
@@ -544,11 +588,11 @@ body {
   }
 
   .app-card {
-    min-height: 280px;
+    min-height: 300px;
   }
 
   .workflow-image {
-    height: 150px;
+    height: 200px;
   }
 
   .faq-heading {
@@ -566,6 +610,80 @@ body {
   .workflow-subtitle {
     font-size: 0.9rem;
     margin-bottom: 1.2rem;
+  }
+
+  .faq-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .faq-title h2 {
+    font-size: 2rem;
+  }
+  
+  .faq-description {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+  
+  .question-header {
+    padding: 1rem;
+    height: auto;
+    min-height: 60px;
+  }
+  
+  .question-header h3 {
+    font-size: 0.9rem;
+  }
+  
+  .toggle-icon {
+    font-size: 1.2rem;
+  }
+  
+  .question-content {
+    padding: 0 1rem;
+  }
+  
+  .question-content p {
+    font-size: 0.9rem;
+  }
+  
+  .faq-question.active .question-content {
+    padding: 0 1rem 1rem;
+  }
+  
+  body.mobile-version .faq-title h2 {
+    font-size: 2rem;
+  }
+  
+  body.mobile-version .faq-description {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+  
+  body.mobile-version .question-header {
+    padding: 1rem;
+    height: auto;
+    min-height: 60px;
+  }
+  
+  body.mobile-version .question-header h3 {
+    font-size: 0.9rem;
+  }
+  
+  body.mobile-version .toggle-icon {
+    font-size: 1.2rem;
+  }
+  
+  body.mobile-version .question-content {
+    padding: 0 1rem;
+  }
+  
+  body.mobile-version .question-content p {
+    font-size: 0.9rem;
+  }
+  
+  body.mobile-version .faq-question.active .question-content {
+    padding: 0 1rem 1rem;
   }
 }
 
@@ -585,16 +703,16 @@ body {
 }
 
 .example-title {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   color: #191919;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.5rem;
 }
 
 .workflow-subtitle {
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   color: #E8ECEF;
@@ -678,9 +796,9 @@ body {
 
 .workflow-step .app-card h4 {
   color: #191919;
-  font-family: "Inter", sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   text-align: center;
   padding: 0 0.5rem;
@@ -744,6 +862,45 @@ body.mobile-version .workflow-step:nth-child(1) {
   right: 35%;
 }
 
+/* FAQ Mobile Styles */
+body.mobile-version .faq-section {
+  max-width: 768px;
+}
+
+body.mobile-version .faq-wrapper {
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+}
+
+body.mobile-version .faq-title {
+  flex: none;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+body.mobile-version .faq-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+body.mobile-version .faq-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+body.mobile-version .faq-questions {
+  align-items: center;
+  width: 100%;
+}
+
+body.mobile-version .faq-question {
+  width: 100%;
+  max-width: 600px;
+}
+
 /* Additional Mobile Breakpoint for Smaller Devices */
 @media (max-width: 480px) {
   body.mobile-version .workflow-step .app-card {
@@ -767,222 +924,32 @@ body.mobile-version .workflow-step:nth-child(1) {
 /*                          */
 /*          Banner          */
 /*                          */
-/*.banner {
-  background: linear-gradient(135deg, #070926, #1f2129);
-  text-align: center;
-  padding: 2rem 1rem;
-}
-.banner h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: lighter;
-  margin-bottom: 2rem;
-  color: #ffffff;
-}
-.banner p {
-  font-size: 1.1rem;
-  opacity: 0.8;
-}*/
+/* ... existing code ... */
 
 /*                    */
 /* Search Bar Section */
 /*                    */
-/*.search-section {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-.search-response {
-  min-height: 50px;
-  margin-bottom: 1rem;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #E8ECEF;
-  white-space: pre-wrap;
-}
-.search-bar {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-#search-input {
-  padding: 0.75rem 1rem;
-  width: 100%;
-  max-width: 800px;
-  border: 1px solid #3d3d41;
-  border-radius: 4px;
-  background-color: #252F35;
-  color: #E8ECEF;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1.1rem;
-}
-#search-input::placeholder {
-  color: #A0A0A0;
-}
-#search-btn {
-  padding: 0.75rem 1.5rem;
-  background-color: #28292b;
-  color: #E8ECEF;
-  border: none;
-  border-radius: 4px;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-#search-btn:hover {
-  background-color: #45474b;
-}*/
+/* ... existing code ... */
 
 /*          */
 /* Carousel */
 /*          */
-/*.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  margin: 2rem auto;
-  text-align: center;
-  overflow: hidden;
-}
-
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  background-color: #121317;
-  position: relative;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-  filter: blur(2px);
-}
-
-.carousel-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #3e3e4058;
-  border-radius: 6px;
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #E8ECEF;
-  text-shadow: 1px 1px 2px #000000cc;
-  width: 80%;
-  z-index: 2;
-}
-
-.carousel-item h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 0.75rem;
-  color: #ffffff;
-}
-
-.carousel-item p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 1.25rem;
-  opacity: 0.9;
-}
-
-.explore-btn {
-  display: inline-block;
-  background-color: #28292b;
-  color: #E8ECEF;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-.explore-btn:hover {
-  background-color: #45474b;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #1e2022;
-  color: #cfcfcf;
-  border: none;
-  font-size: 2rem;
-  padding: 0.2rem 0.6rem;
-  cursor: pointer;
-  border-radius: 4px;
-}
-.carousel-btn:hover {
-  background-color: #56585d;
-}
-
-.prev-btn {
-  left: 10px;
-}
-.next-btn {
-  right: 10px;
-}*/
+/* ... existing code ... */
 
 /*                  */
 /* Application List */
 /*                  */
-.application-list {
-  padding: 2rem 1rem;
-}
-.application-list h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: #ffffff;
-}
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .applications {
   padding: 2rem 1rem;
-  background-color: #d8d8d8;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  /*box-shadow: 0 4px 6px rgba(255, 255, 255, 0.196);*/
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
-  border-radius: 10px;
-  margin-top: 2rem; /* Space from previous section */
-  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 1px solid #23222077;
+  margin-top: 1rem; /* Space from previous section */
+  margin-bottom: 1rem;
 }
 
 .applications-wrapper {
@@ -998,35 +965,38 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .app-row-title {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: #2c2b2b;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #1c1c1c;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
+  letter-spacing: 0.01rem;
   margin-left: 2rem;
   margin-top: 1rem;
+
 }
 
 .app-row {
   position: relative;
   height: auto; /* Allow dynamic height */
   display: flex;
-  min-height: 450px;
+  min-height: 500px;
   flex-direction: column; /* Stack cards vertically */
   align-items: center;
   background-color: transparent; /* Match workflow item background */
-  border-radius: 6px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.332);*/
+  border-radius: 8px;
   padding: 0 1rem;
   margin-bottom: 0rem;
 }
 
 .app-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap */
+  flex-wrap: wrap;
   gap: 1rem;
-  width: 100%; /* Fit within container */
-  justify-content: flex-start; /* Distribute cards evenly */
+  width: 100%;
+  justify-content: center;
 }
 
 /* Remove scrolling styles */
@@ -1038,8 +1008,6 @@ body.mobile-version .workflow-step:nth-child(1) {
   display: none; /* Already hidden, but redundant now */
 }
 
-
-
 /* Remove scroll button styles */
 .app-scroll-btn,
 .scroll-btn {
@@ -1048,83 +1016,53 @@ body.mobile-version .workflow-step:nth-child(1) {
 
 /* Extend Button for All Applications */
 .extend-btn {
-  color: #ffffff;
+  color: #1c1c1c;
   font-size: 1.25rem;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
-  background-color: #d8d8d8; /* Light gray base color */
-  border: 1px solid #c8c8c8da; /* Subtle molded edge */
+  background-color: transparent; /* Light gray base color */
   padding: 0.5rem 1.8rem; /* Increased padding for depth */
   align-self: center;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: 700;
-  box-shadow: 0 2px 4px #c8c8c8, /* Main shadow for lift */
-              0 1px 2px #c8c8c8; /* Subtle side lift */
+  font-weight: 400;
+  border: 1px solid #232220a6;
   transition: all 0.3s ease; /* Smooth transition for hover */
-  text-shadow: 0 1px 2px #f5f4f41a; /* Slight text lift */
   letter-spacing: 0.1em;
 }
 
-.extend-btn:hover {
-  color: #ffffff;
-  background-color: #e6e4e4; /* Lighter on hover */
-  box-shadow: 0 6px 12px #c8c8c8, /* Enhanced shadow on hover */
-              0 3px 6px #c8c8c8;
+.extend-btn:hover { /* Lighter on hover */
+  border: 1px solid #232220;
   transform: translateY(-2px); /* Slight lift on hover */
-
 }
 
 /* Show Less Button for All Applications */
 .show-less-btn {
-  color: #ffffff; /* Already white, matching hover state */
-  font-size: 1rem;
-  font-family: "Poppins", Helvetica, sans-serif;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #E8ECEF; /* Light gray base color */
-  border: 2px solid #d8d8d8; /* Subtle molded edge */
-  padding: 0.5rem 1rem; /* Increased padding for depth */
-  margin-top: 1rem;
-  align-self: center;
-  cursor: pointer;
-  font-weight: 700;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), /* Main shadow for lift */
-              0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle side lift */
-  transition: all 0.3s ease; /* Smooth transition for hover */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Slight text lift */
-}
-
-.show-less-btn:hover {
-  background-color: #d8d8d8; /* Lighter on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), /* Enhanced shadow on hover */
-              0 3px 6px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px); /* Slight lift on hover */
+  display: none;
 }
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
   /* Featured Apps: 2 cards per slide, scrollable */
   .featured-apps-row {
-    overflow-x: auto; /* Enable horizontal scrolling on mobile */
-    scroll-snap-type: x mandatory; /* Snap to each slide */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
   .featured-apps-wrapper {
-    flex-wrap: nowrap; /* Prevent wrapping, create a horizontal row */
-    width: 200%; /* 2 slides (100% each) */
-    scroll-snap-align: start; /* Snap to the start of each slide */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .featured-apps-wrapper .app-card {
-    flex: 0 0 calc(50% - 0.5rem); /* 2 cards per slide (50% width minus gap) */
-    max-width: calc(50% - 0.5rem); /* Ensure 2 cards fit side by side */
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
   }
 
-  /* All Apps: 2 cards side by side, non-scrollable */
+  /* All Apps: 2 cards side by side */
   #all-apps-row .app-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1133,15 +1071,33 @@ body.mobile-version .workflow-step:nth-child(1) {
   }
 
   #all-apps-row .app-card {
-    flex: 0 0 calc(50% - 0.5rem); /* 2 cards per row (50% width minus gap) */
-    max-width: calc(50% - 0.5rem); /* Ensure 2 cards fit side by side */
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
   }
+}
 
-  /* Adjust button spacing */
-  .extend-btn,
-  .show-less-btn {
-    margin-top: 1rem;
+/* Smaller devices */
+@media (max-width: 480px) {
+  .app-card {
+    width: 120px;
+    height: 150px;
   }
+  
+  .app-card img {
+    height: 80px;
+  }
+  
+  .app-card h3,
+  .app-card h4 {
+    font-size: 0.8rem;
+    padding: 0.25rem;
+  }
+}
+
+/* Adjust app row height since cards are smaller now */
+.app-row {
+  min-height: auto;
+  padding: 1rem 0;
 }
 
 /*                  */
@@ -1154,7 +1110,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .discover h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 2rem;
   color: #ffffff;
   text-align: center;
@@ -1167,7 +1123,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .category-row h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: lighter;
   color: #ffffff;
@@ -1225,113 +1181,137 @@ body.mobile-version .workflow-step:nth-child(1) {
 /* Application Cards */
 /*                   */
 .app-card {
-  width: 300px;
-  margin: 0 10px;
-  background-color: #d7d8db;
-  border-radius: 6px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lifted effect */
-  padding: 1rem;
+  width: 240px;
+  margin: 0.5rem;
+  background-color: #eae9e9;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /*border: 1px solid #23222077;*/
+  padding: 0.75rem;
   text-align: left;
   flex-shrink: 0;
   cursor: pointer;
-  display: flex; /* Add Flexbox */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: space-between; /* Push button to bottom */
-  height: 350px; /* Fixed height to ensure consistency */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 220px;
+  transition: all 0.3s ease;
 }
 
 .app-card img {
   width: 100%;
-  height: 175px; /* Fixed height for consistency */
-  object-fit: cover; /* Ensure image fits without distortion */
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
 }
 
 .app-card h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0rem;
-  margin-top: 0.5rem;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+  padding: 0;
   color: #1d1d1d;
+  width: 100%;
 }
 
 .app-card h4 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  margin-top: 1rem;
-  font-size: 1.2rem;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
   color: #1d1d1d;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  text-align: left;
+  padding: 0;
 }
 
 .app-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
+  /*background-color: transparent;*/
 }
 
-.app-card a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.app-card .keywords {
-  font-size: 0.9rem;
-  color: #858484;
-  margin-bottom: 0.5rem;
-  flex-grow: 0; /* Prevent keywords from expanding too much */
-}
-
-.app-card p {
-  font-size: 1rem;
-  color: #191919;
-  margin-bottom: 1rem;
-  flex-grow: 1; /* Allow description to expand and push button down */
-  overflow: hidden; /* Hide overflow if text is too long */
-  text-overflow: ellipsis; /* Add ellipsis for truncated text */
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
-}
-
+/* Hide elements that don't fit in the new compact cards */
+.app-card p, 
+.app-card .keywords,
 .app-card .show-more {
-  background: none;
-  border: none;
-  color: #191919;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0;
-  margin-top: auto; /* Ensure button stays at bottom */
-  text-align: left;
+  display: none;
 }
 
-.show-more:hover {
-  text-decoration: underline;
+/* Update app wrapper to show 5 cards per row */
+.app-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Update mobile styles for app cards */
+@media (max-width: 768px) {
+  /* Featured Apps: 2 cards per row */
+  .featured-apps-row {
+    overflow-x: visible;
+  }
+
+  .featured-apps-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .featured-apps-wrapper .app-card {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    height: 200px;
+    margin: 0.25rem;
+  }
+
+  /* All Apps: 2 cards side by side */
+  #all-apps-row .app-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #all-apps-row .app-card {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    height: 200px;
+    margin: 0.25rem;
+  }
+  
+  .app-card img {
+    height: 120px;
+  }
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+  .app-card {
+    height: 180px;
+  }
+  
+  .app-card img {
+    height: 100px;
+  }
+  
+  .app-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .app-card h4 {
+    font-size: 0.8rem;
+  }
 }
 
 /*                */
 /* Scroll Buttons */
 /*                */
 .scroll-btn {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #687165;
-  color: #1E2528;
-  border: none;
-  font-size: 2rem;
-  padding: 0.2rem 0.6rem;
-  cursor: pointer;
-  border-radius: 4px;
-  z-index: 5;
-}
-
-.scroll-btn.left {
-  left: 0;
-}
-
-.scroll-btn.right {
-  right: 0;
+  display: none;
 }
 
 /*               */
@@ -1362,7 +1342,7 @@ body.mobile-version .workflow-step:nth-child(1) {
   position: relative;
 }
 
-.accordion-btn {
+.accordion-btn { /* Description of the app under the app card */
   background-color: #E8ECEF;
   color: #1d1d1d;
   border: none;
@@ -1419,10 +1399,10 @@ body.mobile-version .workflow-step:nth-child(1) {
   transform: translate(-50%, -50%);
   background-color: #E8ECEF;
   color: #191919;
-  border: none;
+  border: 1px solid #23222077;
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1rem;
   opacity: 0.7;
   cursor: pointer;
@@ -1457,23 +1437,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .all-apps-btn {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.all-apps-btn a {
-  display: inline-block;
-  background-color: #28292b;
-  color: #1d1d1d;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.all-apps-btn a:hover {
-  background-color: #45474b;
+  display: none;
 }
 
 /*          */
@@ -1499,32 +1463,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 /* Workflows */
 /*           */
 .carousel-btn {
-  background-color: #E8ECEF;
-  color: #191919;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-
-.carousel-btn:hover {
-  background-color: #d8d8d8;
-  color: #1d1d1d;
-}
-
-.prev-btn {
-  left: 1rem;
-}
-
-.next-btn {
-  right: 1rem;
+  display: none;
 }
 
 .workflows {
@@ -1556,12 +1495,12 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .discover-title {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 3.5rem;
   color: #191919;
   text-align: left;
   margin: 0 0 1rem 0;
-  font-weight: bold;
+  font-weight: 700;
   flex: 1; /* Allow titles to take available space */
   display: flex;
   flex-direction: column;
@@ -1572,13 +1511,13 @@ body.mobile-version .workflow-step:nth-child(1) {
 .all-workflows-btn {
   color: #191919;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1rem;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   display: inline-flex;
   align-items: center;
   background: none; /* Remove button background */
-  border: none; /* Remove border */
+  border: 1px solid #23222077;
   padding: 0; /* Remove padding */
   margin-top: 1rem; /* Space below the titles */
 }
@@ -1627,7 +1566,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .workflow-text h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 0rem;
@@ -1655,45 +1594,11 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .explore-workflow-btn {
-  color: #E8ECEF;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: "Poppins", Helvetica, sans-serif;
-  display: inline-flex;
-  align-items: center;
-  background: transparent; /* Transparent background */
-  border: 1px solid #ffffff; /* White border like search button */
-  border-radius: 4px; /* Rounded corners like search button */
-  padding: 0.5rem 1rem; /* Consistent padding */
-  align-self: flex-start; /* Align to the bottom */
-}
-
-.explore-workflow-btn:hover {
-  background-color: #ffffff;
-  color: #121317; /* Ensure readability on hover */
+  display: none;
 }
 
 .workflow-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid #ffffff; /* White border */
-  color: #ffffff;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-left: 0.5rem;
-}
-
-.workflow-btn.prev-btn {
-  left: 1rem;
-  content: "<"; /* Set to "<" symbol (note: use HTML for content) */
-}
-
-.workflow-btn.next-btn {
-  right: 1rem;
-  content: ">"; /* Set to ">" symbol (note: use HTML for content) */
+  display: none;
 }
 
 .workflows-cta {
@@ -1702,17 +1607,7 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .cta-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #E8ECEF;
-  color: #121317;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 1.2rem;
-}
-
-.cta-btn:hover {
-  background-color: #ffffff;
+  display: none;
 }
 
 /*             */
@@ -1734,26 +1629,27 @@ body.mobile-version .workflow-step:nth-child(1) {
 
 .faq-title {
   flex: 0 0 400px;
-  padding: 2rem 0;
+  padding: 0;
   text-align: right;
 }
 
 .faq-title h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 5.5rem;
   font-weight: 700;
   color: #191919;
   line-height: 1.2;
   margin-bottom: 1rem;
-  text-align: right;
+  text-align: left;/* Title: "FAQ"*/
 }
 
 .faq-description {
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 2.5rem;
   color: #191919;
-  line-height: 1.5;
-  text-align: right;
+  line-height: 1;
+  text-align: left;
+  font-weight: 400;
 }
 
 .faq-questions {
@@ -1764,9 +1660,10 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .faq-question {
-  background-color: #d7d8db;
-  border-radius: 6px;
+  background-color: #eae9e9;
+  border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /*border: 1px solid #23222077;*/
   overflow: hidden;
   transition: all 0.3s ease;
   width: 600px;
@@ -1784,15 +1681,16 @@ body.mobile-version .workflow-step:nth-child(1) {
 }
 
 .question-header h3 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: "Uncut Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #1d1d1d;
   margin: 0;
+  line-height: 1;
 }
 
 .toggle-icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #1d1d1d;
   transition: transform 0.3s ease;
@@ -1817,8 +1715,9 @@ body.mobile-version .workflow-step:nth-child(1) {
 .question-content p {
   margin: 0;
   color: #191919;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
 /* Mobile Responsive Styles for FAQ */
@@ -1920,4 +1819,41 @@ body.mobile-version .workflow-step:nth-child(1) {
     padding: 0 1rem 1rem;
   }
 }
+
+body.mobile-version {
+  /* ... existing code ... */
+}
+
+body.mobile-version .hero-content {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body.mobile-version .hero-title {
+  text-align: left;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+body.mobile-version .hero-subtitle {
+  text-align: left;
+  width: 100%;
+}
+
+/*              */
+/* Search Styles (removed as they're unused) */
+/*              */
+#search-input,
+#search-btn {
+  display: none;
+}
+
+/* ... existing code ... */
+
+/* Explore Button (removed as unused) */
+.explore-btn {
+  display: none;
+}
+
+/* ... existing code ... */
 

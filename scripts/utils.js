@@ -4,8 +4,6 @@ function createNewAppCard(app) {
   card.innerHTML = `
     <img src="${app.image}" alt="${app.name} Preview">
     <h3>${app.name}</h3>
-    <p>${app.shortDesc}</p>
-    <button class="show-more">Show more</button>
   `;
 
   // Make the card clickable (link to app site)
@@ -13,17 +11,6 @@ function createNewAppCard(app) {
     e.stopPropagation();
     openModal(app);
   });
-
-  // Prevent button from triggering card event twice
-  const showMoreBtn = card.querySelector(".show-more");
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      openModal(app);
-    });
-  } else {
-    console.error("Show more button not found in card for app:", app.name);
-  }
 
   return card;
 }

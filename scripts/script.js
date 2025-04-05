@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
           allWrapper.appendChild(createNewAppCard(app));
         });
         allAppsRow.classList.remove('expanded');
-        extendBtn.textContent = "MORE";
+        extendBtn.textContent = "show all";
         isExtended = false;
       };
 
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
             allWrapper.appendChild(createNewAppCard(app));
           });
           allAppsRow.classList.add('expanded');
-          extendBtn.textContent = "LESS";
+          extendBtn.textContent = "show less";
           isExtended = true;
         } else {
           // Collapse/shrink: Show only 4 apps
